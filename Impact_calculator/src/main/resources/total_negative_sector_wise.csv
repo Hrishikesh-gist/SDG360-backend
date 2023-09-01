@@ -1,0 +1,58 @@
+sectorCode,sectorName,totalNegative,marketValue,count,count_
+FINS,Financial Services,-5.17E+11,9135501.49,406,406
+GENE,Utilities - Generation and Distribution,-2.52E+11,956598.33,52,52
+OGES,"Oil and Gas - Drilling, Extraction, Refining, Support Activities and Transportation",-1.09E+11,2162394.79,80,80
+MOMI,Metal Ore Mining,-1.05E+11,865140.88,55,55
+ITIS,IT Services (including media tech; cloud tech; other tech services),-72096479348,11440687.27,279,279
+CEME,"Cement, Concrete and other Cementitious Product Manufacturing",-65774760000,253797.87,24,24
+IRON,Iron and Steel Manufacturing,-65535740000,185054.43,21,21
+CONG,Conglomerates,-60743215300,1827148.27,66,66
+PERF,Performance and Industrial Chemical Manufacturing,-56037730800,1265203.68,105,105
+TRAN,"Manufacturing of Transport Vehicles (Air, Road, Water, Rail)",-36291946500,1908353.89,98,98
+WATL,Water Logistics,-31807962000,137716.62,19,19
+AAMA,Alumina and Aluminum Production,-30319230000,41816.42,8,8
+WHRE,Retail (Retail & Wholesale; on-line and shops),-26638538220,4581154.33,120,120
+EEMA,"Electrical equipment, Appliances, Computer, Electronic Products and Component Manufacturing",-25759808040,8361978.05,254,254
+OTMA,Other Miscellaneous Manufacturing,-20900241400,1861424.5,81,81
+AIRL,Air Logistics,-19674634090,213794.36,20,20
+PILL,Pharmaceuticals,-17995266190,6303108.32,143,143
+LASA,"Livestock Raising, Aquaculture and Support Activities",-14881495600,34272.64,7,7
+WATE,Water and Wastewater Treatment and Supply Utilities,-12635734600,112050.99,9,9
+HOSP,Hospitals and Healthcare Related Services,-12107216180,1277926.37,39,39
+ENTE,Entertainment,-11822162562,747169.23,32,32
+PAPM,"Paper, Pulp and Paperboard Manufacturing",-11737152600,151642.67,18,18
+CONS,Consulting Services,-9402663753,768992.55,54,54
+INDE,Infrastructure Development,-8519683280,235060.37,22,22
+FOMA,Food Manufacturing,-8350187000,1099211.34,64,64
+COAL,Coal Mining,-8341083000,101508.64,14,14
+FOOD,Hospitality (Hotels; Restaurants; etc),-7173389800,784788.61,32,32
+FMMA,Metal Fabrication and Machinery Manufacturing,-6900466200,1411266.26,96,96
+AGRO,Agrochemicals Manufacturing,-6886449000,171268.03,15,15
+REEN,"Electricity Generation, Transmission and Distribution - Renewable",-6657522192,127426.54,19,19
+RESS,Real Estate Services,-5912485540,1305437.54,109,109
+DASP,"Diary Products, Animal Slaughtering and Seafood products preperation, processing and packaging",-5541448600,142139.24,15,15
+RAIL,Rail Logistics,-5540510000,501532.82,19,19
+NMMA,Nonmetallic Mineral Products Manufacturing (except Cementacious Products),-4851526000,223299.72,27,27
+POST,Postal and Courier Services,-4795028000,332860.2,9,9
+WAST,Waste Collection and Disposal Services,-4138914000,143133.39,6,6
+WASH,"Personal and Homecare, Flavours and Fragrance Manufacturing",-3986003480,1373110.19,31,31
+BEVM,Beverage Manufacturing,-3517172010,1792345.78,45,45
+EDUC,"Schools, Colleges, Universities, and other Educational Institutes",-2580426600,15493.19,5,5
+BLDG,"Commercial, Non-Commercial Building Construction and Contractors",-2084970980,193305.88,23,23
+DIST,Utilities - Distribution and Transmission,-1903019100,103880.97,9,9
+TRSA,Support Activities for Transportation,-1895960790,132889.84,22,22
+WPMA,Wood Processing and Product Manufacturing,-1792020000,10375.81,4,4
+LOGS,"Forestry, Logging and Support Activities",-1654400000,52959.36,3,3
+PLMA,Plastic and Products Manufacturing,-1565046000,47489.1,6,6
+OTHE,Other Services,-1472764253,93940.01,12,12
+OMMA,"Other Metal Manufacturing (except Iron, Steel and Aluminum)",-1433522000,89504.03,15,15
+CLOT,"Fabric, Textile, Apparel, Leather and Related Products Manufacturing",-1363798200,814164.78,23,23
+AGSA,Agricultural and Support Activities,-1295496555,29463.82,6,6
+RENT,Rental and Leasing,-1115257000,107477.85,7,7
+COMA,Petroleum and Coal Product Manufacturing,-1080000000,9719.46,2,2
+ROAL,Road Logistics,-829863000,129592.53,11,11
+NMMI,Nonmetallic Mineral Mining and Quarrying,-369300000,15718.54,1,1
+RUMA,Rubber and Products Manufacturing,-348972000,14590.6,7,7
+PRIN,Print and Publishing,-237656000,32770.84,6,6
+TOBA,Tobacco Manufacturing,-66951400,223291.51,2,2
+RECR,Recreational Industry,-29191766,65323.58,7,7
