@@ -19,8 +19,9 @@ import org.springframework.stereotype.Component;
 public class GetTotalValues {
     private TotalValues tt;
     private GetTotalValues() throws FileNotFoundException {
-
-        String filePath = "C:\\Users\\Admin\\Documents\\Impact_calculator\\Impact_calculator\\src\\main\\resources\\calculated_totals_new.csv";
+        String currentDirectory = System.getProperty("user.dir");
+        String currPath= currentDirectory + "\\Impact_calculator\\src\\main\\resources\\calculated_totals_new.csv";
+        String filePath = currPath;
         try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
             CsvToBean<TotalValues> csvToBean = new CsvToBeanBuilder<TotalValues>(reader)
                     .withType(TotalValues.class)
