@@ -19,7 +19,10 @@ public class GetSectoralData {
     private List<SectoralImpact> sectoralImpactListList;
     private GetSectoralData() throws FileNotFoundException{
         sectoralImpactListList= new ArrayList<>();
-        String filePath="C:\\Users\\Admin\\Documents\\Impact_calculator\\Impact_calculator\\src\\main\\resources\\total_negative_sector_wise.csv";
+        String currentDirectory = System.getProperty("user.dir");
+        String currPath= currentDirectory + "\\Impact_calculator\\src\\main\\resources\\total_negative_sector_wise.csv";
+	    System.out.println("arbitrary text : "+currentDirectory);
+        String filePath=currPath;
         try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
             CsvToBean<SectoralImpact> csvToBean = new CsvToBeanBuilder<SectoralImpact>(reader)
                     .withType(SectoralImpact.class)
