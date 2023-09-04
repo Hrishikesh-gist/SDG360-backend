@@ -1,10 +1,13 @@
 package com.example.SDG_calculator.Impact_calculator.utils;
+import com.example.SDG_calculator.Impact_calculator.exception.BusinessException;
+import com.example.SDG_calculator.Impact_calculator.exception.ErrorModel;
 import com.example.SDG_calculator.Impact_calculator.models.TotalValues;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 import java.io.FileReader;
@@ -30,8 +33,14 @@ public class GetTotalValues {
 
             // Get the first record from the CSV and return it
             tt= csvToBean.parse().stream().findFirst().orElse(null);
+
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            List<ErrorModel> errors = new ArrayList<>();
+            ErrorModel error = new ErrorModel();
+            error.setCode("File read Problem");
+            error.setMessage("Cannot read the file GetTotalValues");
+            errors.add(error);
+            throw new BusinessException(errors);
         }
     }
 }

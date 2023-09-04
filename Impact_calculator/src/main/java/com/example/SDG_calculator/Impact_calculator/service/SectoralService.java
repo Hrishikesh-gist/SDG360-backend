@@ -1,5 +1,7 @@
 package com.example.SDG_calculator.Impact_calculator.service;
 
+import com.example.SDG_calculator.Impact_calculator.exception.BusinessException;
+import com.example.SDG_calculator.Impact_calculator.exception.ErrorModel;
 import com.example.SDG_calculator.Impact_calculator.models.SectoralDto;
 import com.example.SDG_calculator.Impact_calculator.models.SectoralImpact;
 import com.example.SDG_calculator.Impact_calculator.models.TotalValues;
@@ -29,6 +31,16 @@ public class SectoralService {
         Double investImpact= tt.getTotal_negative_SDGs()/(tt.getTotal_market_value()*1000000)*invest;
         Double totalNegative= tt.getTotal_negative_SDGs();
         List<SectoralImpact> siList=getSectoralData.getSectoralImpactListList();
+
+        if(tt==null || siList ==null)
+        {
+            List<ErrorModel> errors = new ArrayList<>();
+            ErrorModel error = new ErrorModel();
+            error.setCode("Null from CSV read");
+            error.setMessage("Either of the CSV read is not successfully");
+            errors.add(error);
+            throw new BusinessException(errors);
+        }
         for(SectoralImpact si : siList)
         {
             SectoralDto sd= new SectoralDto();

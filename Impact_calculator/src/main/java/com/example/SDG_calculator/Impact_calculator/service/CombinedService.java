@@ -15,11 +15,7 @@ public class CombinedService {
     SDG_Service sdgService;
     @Autowired
     SectoralService sectoralService;
-//    private ResponseEntity<Double> totalNegativeImpactResponse;
-//    private ResponseEntity<List<SdgImpact>> sdgWiseImpactResponse;
-//    private ResponseEntity<List<SectoralDto>> sectoralDataResponse;
     public ResponseEntity<CombinedDto> getCombinedData(Double invest){
-
         ResponseEntity<Double> totalNegativeImpactResponse= sdgService.getNegativeImpact(invest);
         ResponseEntity<List<SdgImpact>> sdgWiseImpactResponse=sdgService.getSdgWiseImpact(invest);
         ResponseEntity<List<SectoralDto>> sectoralDataResponse = sectoralService.getSectoralData(invest);

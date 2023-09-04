@@ -1,5 +1,7 @@
 package com.example.SDG_calculator.Impact_calculator.service;
 
+import com.example.SDG_calculator.Impact_calculator.exception.BusinessException;
+import com.example.SDG_calculator.Impact_calculator.exception.ErrorModel;
 import com.example.SDG_calculator.Impact_calculator.models.SdgImpact;
 import com.example.SDG_calculator.Impact_calculator.models.TotalValues;
 import com.example.SDG_calculator.Impact_calculator.utils.GetTotalValues;
@@ -34,6 +36,16 @@ public class SDG_Service {
     }
     public ResponseEntity<List<SdgImpact>> getSdgWiseImpact(Double invest) {
         TotalValues tt= getTotalValues.getTt();
+        if(tt==null)
+        {
+            List<ErrorModel> errors = new ArrayList<>();
+            ErrorModel error = new ErrorModel();
+            error.setCode("Null from CSV read");
+            error.setMessage("Either of the CSV is not read successfully");
+            errors.add(error);
+            throw new BusinessException(errors);
+        }
+
         List<SdgImpact> sdgList = new ArrayList<>();
         Double total_market=tt.getTotal_market_value();
         Double total_negative_sdg=tt.getTotal_negative_SDGs();
@@ -56,7 +68,12 @@ public class SDG_Service {
                 sdgImpact.setInvestment_impact(roundedInvestmentImpact);
                 sdgImpact.setTotal_impact(impact/1000000);
             } catch (Exception e) {
-                e.printStackTrace();
+                List<ErrorModel> errors = new ArrayList<>();
+                ErrorModel error = new ErrorModel();
+                error.setCode("Method Calling error");
+                error.setMessage("Unable to get the sdg data");
+                errors.add(error);
+                throw new BusinessException(errors);
             }
             sdgList.add(sdgImpact);
 
